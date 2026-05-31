@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BookOpen, Lock, ShieldCheck, HelpCircle, Eye, Landmark, MessageCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Lock, ShieldCheck, HelpCircle, Eye, Landmark, MessageCircle, AlertTriangle } from 'lucide-react';
 import PhotoSlot from '../../components/PhotoSlot';
 import SEO from '../../components/SEO';
 
@@ -84,7 +84,7 @@ export default function BlogDetail() {
   if (!blog) {
     return (
       <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 text-center transition-colors duration-300">
-        <AlertCircle size={48} className="text-red-500 mb-4 animate-bounce" />
+        <AlertTriangle size={48} className="text-red-500 mb-4 animate-bounce" />
         <h2 className="text-2xl font-bold text-foreground mb-2 transition-colors">Article Not Found</h2>
         <p className="text-muted-foreground text-sm mb-6 transition-colors">The requested learning resource does not exist or has been removed.</p>
         <Link to="/blog" className="inline-flex items-center gap-2 border border-border hover:border-primary text-foreground hover:text-primary font-bold text-xs uppercase tracking-widest px-5 py-3 transition-colors">

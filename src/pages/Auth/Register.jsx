@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { User, Mail, Lock, ArrowRight, UserPlus, AlertCircle } from 'lucide-react';
+import { User, Mail, Lock, ArrowRight, UserPlus, AlertTriangle } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import SEO from '../../components/SEO';
 
@@ -93,7 +93,7 @@ export default function Register() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="bg-red-500/10 border border-red-500/20 rounded-xl p-3 sm:p-4 flex items-center gap-3 text-red-500 text-[10px] sm:text-xs font-bold mb-6 sm:mb-8"
               >
-                <AlertCircle size={14} className="shrink-0" />
+                <AlertTriangle size={14} className="shrink-0" />
                 <span>{error}</span>
               </motion.div>
             )}

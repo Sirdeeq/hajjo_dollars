@@ -7,7 +7,6 @@ import {
   Landmark, 
   Upload, 
   CheckCircle2, 
-  AlertCircle,
   MessageCircle,
   CreditCard,
   Share2

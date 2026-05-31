@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Bell, 
   CheckCircle2, 
-  AlertCircle, 
+  AlertTriangle, 
   Award, 
   BookOpen, 
   Trash2,
@@ -56,7 +56,7 @@ export default function Notifications() {
     switch (type) {
       case 'enrollment': return <BookOpen className="text-blue-500" />;
       case 'achievement': return <Award className="text-amber-500" />;
-      case 'system': return <AlertCircle className="text-red-500" />;
+      case 'system': return <AlertTriangle className="text-red-500" />;
       default: return <Bell className="text-primary" />;
     }
   };
